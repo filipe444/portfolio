@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font1;
+    src: url(HeadingNowTrial-56Bold.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(sloppyhollow.ttf);
+}
+
+body{
+    background-color: #19315D;
+}
+
+header{
+    display: flex;
+    background-color: #049EE3;
+    border: solid 40px #0A1730;
+    border-radius: 30px;
+}
+
+.logo{
+    margin-left: 30px;
+    display: flex;
+    padding-top: 7px;
+    padding-bottom: 0 auto;
+}
+
+.projetos{
+   margin: 18px;
+   margin-right: 50px;
+   margin-left: 50px;
+}
+
+.projetos:hover{
+    background-color: #ffffffce;
+    border-radius: 40px;
+}
+
+.javascript{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.javascript:hover{
+    background-color:  #ffffffce;
+    border-radius: 50px;
+}
+
+.inicio{
+    margin-left: 30px;
+    display: flex;
+    padding-inline: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: font1;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    margin-block: 30px;
+}
+
+.inicio:hover{
+    display: flex;
+    color: #049EE3;
+    background-color: #0a1730ce;
+    
+}
+
+
+
+.maissobre{
+    margin-left: 30px;
+    display: flex;
+    padding-inline: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: font1;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    margin-block: 30px;
+    
+}
+
+.maissobre:hover{
+    color: #049EE3;
+    background-color: #0a1730ce;
+}
+
+footer{
+    background: #18181865;
+}
+
+
+
+
+p{
+    padding-top: 40px;
+    font-family: 'Nosifer', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contato{
+    font-family: 'Nosifer', sans-serif;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.527);
+    font-size: 25px;
+}
+
+.footer{
+    margin-left: 140px;
+}
+
+.footer:hover{
+    background-color: aliceblue;
+    border-radius: 50%;
+    border: solid 5px;
+}
+
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    border: none;
+    border-radius: 10px;
+    background-color:  #0077ff;
+    margin-top: 20px;
+}
+
+.main-header h1{
+    font-size: 3em;
+    margin-bottom: 1.2em;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-family: 'Nosifer', sans-serif;
+
+}
+
+header p{
+    font-family: 'Nosifer', sans-serif;
+    text-align: initial;
+    text-align: justify;
+    border-radius: 15px;
+    font-size: 1.7em;
+    background-color: #0000005d;
+}
+
+
+
+
+
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;  
+}
+
+section.modulo p{
+    font-family: 'Nosifer', sans-serif;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 30px;
+    color: aliceblue;
+    text-align: justify;
+    font-size: 1.7em;
+    animation: surgir 10s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
+    
+}
+
+section.modulo.content{
+    padding: 40px 0;
+    background: #00000075;
+    color: aliceblue;
+    text-align: justify;
+}
+ section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 70px;
+    font-family:  'Nosifer', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px black;
+    z-index: 50;
+}
+
+section.modulo.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;z-index:8;
+    background: linear-gradient(to bottom, #19315D,#19315d91 40%, #00000077);
+    
+}
+
+section.modulo.parallax-1{
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_1280.jpg);
+}
+section.modulo.parallax-2{
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_1280.jpg);
+}
+
+section.modulo.parallax-3{
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_1280.jpg);
+}
+
+
+
+.text-focus-in {
+    font-family: 'Nosifer', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+    padding: 30px;
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
+@keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
+  .fut{
+    font-family: 'Nosifer', sans-serif;
+  }
+
+
+  .scale-up-center{
+    margin-left: 400px;
+    margin-right: -400px;
+    border: solid 7px  #0077ff;
+    border-radius: 15px;
+  }
+
+
+
+
+
+
+  
+  .scale-up-center {
+	-webkit-animation: scale-up-center 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
